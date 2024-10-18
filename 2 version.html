@@ -1,0 +1,593 @@
+<style>
+    #app + div span {
+    display: none;
+    }
+    </style>
+    
+
+<style>
+    /**VARIABLES**/
+    :root {
+            --primary-color: #000000;
+            --secondary-color: #000000;
+            --black-color: #111213;
+            --white-color: #fff;
+            --gray-color: #efefefba;
+            --paragraph-color: #373737;
+            --button-color: #01e1fa;
+    
+        }
+
+    /** END VARIABLES**/
+
+    /**Heading */
+    h1 {
+        color: var(--black-color) !important;
+    }
+
+    h2 {
+        color: var(--black-color) !important;
+    }
+
+    h3.heading-primary,
+    h3 {
+        color: var(--black-color) !important;
+        padding-left: 5px;
+    }
+
+    p.heading-description {
+        color: var(--paragraph-color) !important;
+        text-align: right;
+    }
+
+    h3.title {
+        color: var(--secondary-color) !important;
+    }
+
+  
+
+   
+    /** end Notice bar  **/
+
+
+    /** end single product **/
+
+    /** Section 3col with hover**/
+     .app-heading .heading-primary {
+        font-size: 22px;
+        font-weight: 600;
+        text-transform: uppercase;
+        line-height: 1.5em;
+        position: relative;
+         text-align: left;
+        display: flex;
+        align-items: center;
+        
+    }
+    
+    /* border */
+    
+     .checkout-section .checkout .main .checkout-form .checkout-heading {
+    font-weight: 600;
+    }
+    
+     h2.checkout-heading {
+    display: flex;
+    flex-direction: row;
+    margin: 0px 0px -12px 0px;
+    font-size: 150px;
+    font-weight: bold;
+    }
+    
+     div#express-checkout-section {
+    display: block;
+    }
+     [dir] .checkout-section .checkout .main .checkout-form .checkout-select select {
+    border: 1px solid #060606;
+    background-color: #fafafa;
+    }
+    .checkout-section .checkout .main .checkout-form .checkout-groups .form-group > .form-label {
+    display: block !important;
+    }
+       #express-checkout-form {
+    padding: 20px 20px 15px 15px;
+    border-style: dotted dotted dotted dotted;
+    border-width: 5px;
+    border-color: var(--primary-color);
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0px 0px 0px 0px #888888;
+    background-color: #f5f5f5;
+    }
+    
+    
+    
+
+      .heading-description{
+        padding-right :100px;
+      }
+
+     .app-heading .heading-primary::before {
+        background: var(--secondary-color);
+        content: "";
+         right: auto;
+        width: 18px;
+        display: inline-block;
+        height: 18px;
+        margin-left: 6px;
+        margin-right: 6px;
+       
+    }
+
+    /** end Section 3col with hover**/
+
+    /*** menu **/
+
+     .header-list a {
+        font-size: 14px;
+        font-weight: 600 !important;
+    }
+
+     .cart-switcher i,
+     .cart-switcher span {
+        color: var(--primary-color) !important;
+    }
+
+     .desktop-bar {
+        height: 80px !important;
+    }
+
+     .header-list a {
+        line-height: 80px !important;
+    }
+
+    /**end menu **/
+
+
+
+    /*** listing products en paralelle **/
+               /*** removed **/
+    /*** end listing products en paralelle **/
+
+
+    /** Products listing ***/
+     section:not(.custom-product-list) .product-item .product-thumbnail img {
+        width: 100%;
+        object-fit: cover;
+        height: 100%;
+    }
+
+     section:not(.custom-product-list) .product-item .product-actions .button {
+        color: var(--white-color);
+        background: var(--primary-color);
+        padding: 8px 12px;
+        text-align: center;
+        width: 100%;
+        text-transform: uppercase;
+        border-radius: 0px;
+        font-size: 13px;
+        font-weight: 600;
+    }
+
+     section:not(.custom-product-list) .product-item,
+     section:not(.custom-product-list) .product-item .product-details {
+        border: none !important;
+    }
+
+     section:not(.custom-product-list) .product-item .product-thumbnail {
+        display: block;
+        height: 0;
+        overflow: hidden;
+        position: relative;
+        background: var(--gray-color);
+    }
+
+     section:not(.custom-product-list) .product-item {
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px !important;
+        border-radius: 18px !important;
+        border: 0.003rem solid var(--gray-color) !important;
+        overflow: hidden;
+        position: relative;
+    }
+
+     section:not(.custom-product-list) .product-item .product-details .product-info {
+        padding: 15px;
+        text-align: start;
+    }
+
+     section:not(.custom-product-list) .product-item .product-details {
+        height: 150px;
+        text-align: left;
+        background-color: var(--white-color);
+        color: var(--black-color);
+        border-radius: 10px;
+        line-height: normal;
+        max-width: 100%;
+        width: 100%;
+        padding: 0 !important;
+        margin-top: 5px !important;
+    }
+
+     section:not(.custom-product-list) .product-item .product-actions {
+        text-align: center;
+        margin: 0 !important;
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+    }
+
+     section:not(.custom-product-list) .product-item .product-price .before {
+        margin: 0;
+    }
+
+     section:not(.custom-product-list) .product-item .product-price {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .products-style-2 .product-actions {
+        display: block !important;
+    }
+
+     section:not(.custom-product-list) .product-price .currency-value.before {
+        color: #424242 !important;
+        margin-left: 0px !important;
+        font-size: 12px;
+        margin-bottom: 0 !important;
+    }
+
+     section:not(.custom-product-list) .product-price .currency-value.after {
+        color: var(--primary-color) !important;
+    }
+
+     section:not(.custom-product-list) .product-title a,
+     .products-slider .product-title a {
+        overflow: hidden !important;
+        white-space: nowrap !important;
+        text-overflow: ellipsis !important;
+        max-width: 200px !important;
+       
+    }
+
+     .product-item .product-title {
+        text-align: right !important;
+    }
+</style>
+
+
+
+
+
+
+
+
+
+
+<style>
+
+
+
+    /** end responsive **/
+
+    @keyframes zoom {
+        0% {
+            transform: scale(0.9);
+        }
+
+        10% {
+            transform: scale(1);
+        }
+
+        80% {
+            transform: scale(0.9);
+        }
+
+        100% {
+            transform: scale(0.9);
+        }
+    }
+
+   
+
+
+
+   
+    @keyframes shake-x {
+
+        0%,
+        100% {
+            -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+        }
+
+        10%,
+        30%,
+        50%,
+        70%,
+        90% {
+            -webkit-transform: translate3d(-5px, 0, 0);
+            transform: translate3d(-5px, 0, 0);
+        }
+
+        20%,
+        40%,
+        60%,
+        80% {
+            -webkit-transform: translate3d(5px, 0, 0);
+            transform: translate3d(5px, 0, 0);
+        }
+    }
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+
+    .single-product .single-submit.shaked {
+        animation: shake-x 2s ease infinite;
+    }
+
+    .single-product .single-submit.shaked:hover {
+        animation: none;
+    }
+
+    .single-submit {
+        animation: shake-x 2s ease infinite;
+    }
+
+   
+</style>
+
+
+
+
+
+
+
+
+
+
+   
+<style>
+
+ 
+
+    .categories-style-1 {
+      
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+
+    .categories-style-1 .category-item {
+        display: block;
+        padding: 0px;
+      
+    
+        border-radius: unset;
+        text-align: center !important;
+
+    }
+
+
+    .categories-style-1 .category-item .category-title {
+        font-size: 12px;
+        margin-top: 10px;
+    }
+</style>
+
+
+
+
+<style>
+    /* تحديد تخطيط الأعمدة في الهاتف */
+    @media screen and (max-width: 767px) {
+        .categories-style-1 {
+            grid-template-columns: repeat(2, 1fr) !important;
+        }
+    }
+
+    /* تحديد تخطيط الأعمدة في الحاسوب */
+    @media screen and (min-width: 768px) {
+        .categories-style-1 {
+            grid-template-columns: repeat(4, 1fr) !important;
+        }
+    }
+
+  
+</style>
+
+
+
+
+
+
+
+
+
+                  
+<button id="backToTopBtn" onclick="if (!window.__cfRLUnblockHandlers) return false; scrollToTop()" data-cf-modified-c85a19905361c361144e2d45-=""><i class="fa fa-arrow-up"></i></button>
+<a id="whatsappBtn" href="https://api.whatsapp.com/send?phone=212675631311" target="_blank"><i
+        class="fa fa-whatsapp"></i></a>
+  
+  
+  
+<style>
+
+#whatsappBtn {
+        display: flex;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        color: #fff;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        width: 45px;
+        height: 45px;
+        padding: 15px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        font-size: 25px;
+        background: #25d366 !important;
+        z-index: 9;
+    }
+      #backToTopBtn {
+        display: none;
+        position: fixed;
+        bottom: 75px;
+        right: 20px;
+        color: #fff;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        width: 45px;
+        height: 45px;
+        padding: 15px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+        background: var(--secondary-color) !important;
+        z-index: 9;
+    }
+
+
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+   <script>
+     
+     
+     // Get the button element
+var mybutton = document.getElementById("backToTopBtn");
+
+// Show the button when the user scrolls down 20px from the top of the document
+window.onscroll = function () {
+    scrollFunction();
+};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "flex";
+    } else {
+        mybutton.style.display = "none";
+    }
+}
+
+// Scroll to the top of the document when the button is clicked
+function scrollToTop() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+     
+      </script>
+      
+      
+      
+      
+<style>
+     .product-actions {
+         display: block !important ;
+    }
+
+    .footer {
+      
+      grid-template-columns: repeat(3, 1fr) !important;
+  }
+  
+ 
+</style>
+
+
+<style>
+    .list-unstyled.is-grid {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr); /* Three columns by default */
+     gap: 10px; /* Space between items */
+     list-style: none; /* Remove list bullets */
+     padding: 0; /* Remove default padding */
+ }
+ 
+ 
+ 
+
+ 
+ @media (max-width: 600px) {
+     .list-unstyled.is-grid {
+         grid-template-columns: repeat(2, 1fr); /* Two columns on small screens */
+     }
+ }
+
+.footer-body .is-grid {
+  display: flex;
+  flex-wrap: nowrap; /* هذا سيمنع التفاف العناصر */
+  justify-content: space-between;
+}
+
+.footer-item {
+  flex: 1 1 30%; /* 30% عرض لكل عنصر مع المرونة في النمو والانكماش */
+  margin: 5px; /* هذا لإضافة المسافة حول كل عنصر */
+  box-sizing: border-box; /* هذا يضمن أن الهوامش لا تؤثر على العرض الكلي للعناصر */
+}
+
+
+</style>
+
+  
+<style>
+    
+  .notice-bar.mobile-notice-bar {
+  height: 100px; /* Set your desired height here */
+}
+
+
+
+    
+   @media screen and (max-width: 767px) {
+
+         .product-actions .button {
+            font-size: 10px !important;
+            font-weight: 600;
+        }
+
+    }
+
+</style>
